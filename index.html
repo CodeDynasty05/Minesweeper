@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Minesweeper</h1>
+    <div class="container">
+      <div class="topBar">
+        <p class="info">Flags Remaining: <span id="flags"></span></p>
+        <p class="info">Timer: <span id="timer"></span></p>
+      </div>
+      <div class="gameField">
+        <table>
+          <tr id="row1">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row2">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row3">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row4">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row5">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row6">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row7">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row8">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row9">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row10">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row11">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row12">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row13">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+          <tr id="row14">
+            <td id="col1"><button></button></td>
+            <td id="col2"><button></button></td>
+            <td id="col3"><button></button></td>
+            <td id="col4"><button></button></td>
+            <td id="col5"><button></button></td>
+            <td id="col6"><button></button></td>
+            <td id="col7"><button></button></td>
+            <td id="col8"><button></button></td>
+            <td id="col9"><button></button></td>
+            <td id="col10"><button></button></td>
+            <td id="col11"><button></button></td>
+            <td id="col12"><button></button></td>
+            <td id="col13"><button></button></td>
+            <td id="col14"><button></button></td>
+            <td id="col15"><button></button></td>
+            <td id="col16"><button></button></td>
+            <td id="col17"><button></button></td>
+            <td id="col18"><button></button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="gameOver">
+        <h2>Game Finished - You <span id="winOrLose"></span></h2>
+        <p>Remaining Flags: <span id="flagsEnd"></span></p>
+        <p>Time: <span id="timerEnd"></span></p>
+        <div class="restart">⟳</div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 48px;
+}
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  font-size: 28px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: rgb(211, 212, 199);
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  font-size: 24px;
+  color: black;
+}
+
+button:hover {
+  background-color: rgb(161, 162, 151);
+}
+
+button:active {
+  background-color: rgb(211, 212, 199);
+}
+
+#flags {
+  color: rgb(27, 171, 27);
+}
+
+.info {
+  color: red;
+}
+
+#timer {
+  color: rgb(27, 171, 27);
+}
+
+.win {
+  color: rgb(21, 137, 21);
+}
+
+.lose {
+  color: red;
+}
+
+.gameOver {
+  visibility: hidden;
+  width: 30vw;
+  height: 35vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(209, 173, 127);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: 2px solid;
+}
+
+.gameOver * {
+  width: 50%;
+}
+
+div.restart {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 5px 0 0 5px;
+  color: green;
+  font-size: 48px;
+  background-color: bisque;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-right: 170px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.gameOver h2 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+}
